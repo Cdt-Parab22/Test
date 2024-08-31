@@ -1,104 +1,120 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: white;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-h1 {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 25px;
-    color: black;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
     display: flex;
     align-items: center;
-    border-bottom: 7px solid #eeeded;
-    position: relative;
-}
-
-.left-elements {
-    display: flex; 
-    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .element1, .element2 {
-    color: black;
-    padding: 10px;
-    margin-left: 10px;
+    color: #333;
+    font-weight: 500;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.element1 a, .element2 a {
+    color: #333;
+    text-decoration: none;
 }
 
 .title {
-    color: black;
+    flex-grow: 1;
     text-align: center;
-    flex-grow: 1; /* Ensures the title takes up space */
-    position: absolute;
-    left: 50%; /* Moves the title to the center of the nav bar */
-    transform: translateX(-50%); /* Corrects centering by shifting it left by 50% of its width */
 }
 
-#Insta{
-    width: 50px;
-    height: 50px;
-    margin-left: 1150px;
+.element3 a {
+    margin-left: 20px;
+    text-decoration: none;
 }
-#Link{
-    width: 40px;
-    height: 40px;
-}
-#github{
+
+#Insta, #Link, #github {
     width: 32px;
     height: 32px;
-    padding-left: 10px;
-
 }
-.element3{
-    display: flex; /* Ensures the icons are aligned horizontally */
+
+.intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-   
-}
-h2{
+    background-color: #fff;
     text-align: center;
+    margin-top: 80px; /* Added to compensate for the fixed header height */
+}
+
+h2 {
     font-size: 50px;
-    margin-top: 120px;
+    color: #333;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-bottom: 100px;
 }
 
-
-.space{
-    padding:60px;
-    color: grey;
-    
+#main-content {
+    padding-top: 100px;
+    display: none; /* Initially hide the content */
 }
 
-.container { 
-    display: flex;               /* Aligns items in a row */
-    align-items: center;         /* Vertically centers items */
-    justify-content: center;     /* Centers the content horizontally */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
 }
 
-.text { 
-    max-width: 50%;              /* Ensures text doesn't overflow */
-    padding-right: 20px;         /* Adds space between text and image */
-    color: grey;
+.text {
+    max-width: 600px;
+    margin: 0 20px;
+    color: #555;
 }
 
-p { 
-    text-align: left;            /* Aligns text to the left */
-    color: grey;
-    font-size: 22px;
-    padding-left: 30px;
-} 
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+}
 
 #Me {
-    width: 500px;                /* Sets the image width */
-    height: 700px;                /* Keeps the aspect ratio */
-    border-style: none;
-    border-width: 7px;
-    margin-left: 150px;           /* Adds space between image and text */
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#Unit{
-    width: 1500px;
+#Unit {
+    width: 100%;
+    max-width: 1200px;
     height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  
+
+/* Display main content after scrolling */
+#main-content:target {
+    display: block;
+}
