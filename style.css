@@ -40,7 +40,7 @@ nav {
 #Insta{
     width: 50px;
     height: 50px;
-    margin-left: 1300px;
+    margin-left: 1150px;
 }
 #Link{
     width: 40px;
@@ -62,7 +62,43 @@ h2{
     font-size: 50px;
     margin-top: 120px;
 }
-p{
-    text-align: center;
+
+
+.space{
+    padding:60px;
     color: grey;
+    
+}
+
+.container { 
+    display: flex;               /* Aligns items in a row */
+    align-items: center;         /* Vertically centers items */
+    justify-content: center;     /* Centers the content horizontally */
+}
+
+.text { 
+    max-width: 50%;              /* Ensures text doesn't overflow */
+    padding-right: 20px;         /* Adds space between text and image */
+    color: grey;
+}
+
+p { 
+    text-align: left;            /* Aligns text to the left */
+    color: grey;
+    font-size: 22px;
+    padding-left: 30px;
 } 
+
+#Me {
+    width: 500px;                /* Sets the image width */
+    height: 700px;                /* Keeps the aspect ratio */
+    border-style: none;
+    border-width: 7px;
+    margin-left: 150px;           /* Adds space between image and text */
+}
+
+#Unit{
+    width: 1500px;
+    height: auto;
+}
+  
