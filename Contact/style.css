@@ -1,0 +1,78 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #b6ffff;
+    box-sizing: border-box;
+    
+}
+
+h1{ 
+    margin-left: 40px;
+    margin-top: 90px;
+    text-align: left;
+    display: inline-block;
+}
+
+.Form{
+    font-family: 'Poppins', sans-serif;
+     text-align: left;
+     margin-left: 100px;
+}
+
+#name{
+    width: 400px;
+    height: 50px;
+    font-weight:500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 7px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    padding-left: 25px;
+}
+
+#email{
+    width: 400px;
+    height: 50px;
+    font-weight:500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 7px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    padding-left: 25px;
+}
+
+#number{
+    width: 400px;
+    height: 50px;
+    font-weight:500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 7px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    padding-left: 25px;
+}
+
+#textarea{
+    width: 400px;
+    height: 100px;
+    font-weight:500;
+    font-family: 'Poppins', sans-serif;
+    font-size:large;
+    margin-top: 7px;
+    padding-bottom: 45px;
+    padding-left: 25px;
+    border-radius: 20px;
+}
+
+#button{
+    font-weight:500;
+    font-size: medium;
+     margin-top: 14px;
+     margin-left: 400px;
+     font-family: 'Poppins', sans-serif;
+     border-radius: 20px;
+     width: 100px;
+     height: 50px;
+}
